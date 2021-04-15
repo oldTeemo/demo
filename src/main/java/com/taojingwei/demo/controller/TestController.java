@@ -1,11 +1,5 @@
 package com.taojingwei.demo.controller;
 
-import java.util.HashMap;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
-import java.util.concurrent.locks.ReentrantReadWriteLock;
-
 import com.taojingwei.demo.pojo.User;
 import com.taojingwei.demo.service.IUserService;
 

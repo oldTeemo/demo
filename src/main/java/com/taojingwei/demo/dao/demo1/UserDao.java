@@ -1,4 +1,4 @@
-package com.taojingwei.demo.dao;
+package com.taojingwei.demo.dao.demo1;
 
 import com.taojingwei.demo.pojo.User;
 

@@ -11,8 +11,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.TransactionDefinition;
-import org.springframework.transaction.TransactionStatus;
-import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class UserServicdImpl implements IUserService {
@@ -37,7 +35,6 @@ public class UserServicdImpl implements IUserService {
     @DataSource({"datasourceTransactionManager1","datasourceTransactionManager2"})
     public void addUser(User user) {
         teacherDao.addUser(user);
-        int x = 1/0;
         userDao.addUser(user);
     }
 

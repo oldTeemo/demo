@@ -16,6 +16,7 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 @Configuration
 @MapperScan(basePackages = "com.taojingwei.demo.dao.demo2", sqlSessionFactoryRef = "db2SqlSessionFactory")
 public class Demo2DataSourceConfig {
+    int x = 1;
 
     @Bean("db2DataSource")
     @ConfigurationProperties(prefix = "spring.datasource.datasource2") //读取application.yml中的配置参数映射成为一个对象
